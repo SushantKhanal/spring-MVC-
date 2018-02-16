@@ -1,0 +1,15 @@
+body {
+    background-color: wheat;
+    text-align: left;
+}
+
+span.strike{
+    text-decoration: line-through;
+    color: #ccc;
+    font-style: itallic;
+}
+span[contenteditable="true"] {
+    background: gray;
+    padding: 5px;
+}
+
