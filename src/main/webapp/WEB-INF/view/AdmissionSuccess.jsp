@@ -1,6 +1,6 @@
 <html>
 <body>
-<h2>Congratulations!!! Your form has been processed!!!</h2>
-<h3>${msg}</h3>
+<h2>${msg}</h2>
+<h3>${student1.studentName}</h3>
 </body>
 </html>

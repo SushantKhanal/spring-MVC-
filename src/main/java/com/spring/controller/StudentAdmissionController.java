@@ -16,11 +16,10 @@ public class StudentAdmissionController {
     }
 
     @PostMapping("/submitAdmissionForm.html")
-    public ModelAndView submitAdmissionForm(@RequestParam Map<String, String> parameters){
-        String name = parameters.get("studentName");
-        String hobby = parameters.get("studentHobby");
+    public ModelAndView submitAdmissionForm(@ModelAttribute("student1") Student student1){
+
         ModelAndView model = new ModelAndView("AdmissionSuccess");
-        model.addObject("msg", "Details submitted by::: Name: " + name + ", hobby: " + hobby);
+        model.addObject("msg", "Congratulations!!! Your form has been processed!!!");
         return model;
     }
 }
